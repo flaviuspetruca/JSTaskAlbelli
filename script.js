@@ -42,17 +42,16 @@ class Divisible {
 
     computeResult(){
         const text = []
-        let i = 1 ;
+        let i = 1;
+        const handleValues = {
+            0 : "foo bar",
+            2 : "foo",
+            3 : "bar",
+            5 : "i"
+        }
         while (i <= this.number){
-            if (i % 2 === 0 && i % 3 === 0){
-                text.push("foo bar");
-            } else if (i % 2 === 0){
-                text.push("foo");
-            } else if (i % 3 === 0){
-                text.push("bar");
-            } else {
-                text.push(i);
-            }
+            let res = handleValues[(i%2)*2 + (i%3 >= 1)*3];
+            text.push(res === "i" ? i : res); 
             i++;
         }
         this.outPutText.append(text);
