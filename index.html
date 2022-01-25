@@ -15,7 +15,7 @@
             <form>
                 <label for="number">Add the number</label>
                 <input type="text" id="input"><br>
-                <button class="btn btn-dark" value="0" onclick="printResults()" id="submitBtn">Print results</button>
+                <button class="btn btn-dark" value="0" id="submitBtn">Print results</button>
                 <h3 id="error" style="color:red"></h3>
             </form>
         </div>
@@ -24,10 +24,5 @@
         </div>
     </div>
 </body>
-<script type="text/javascript" src="script.js"></script>
-<script>
-    document.getElementById("form").addEventListener("click", function(event){
-        event.preventDefault()
-    });
-</script>
+<script type="module" src="script.js"></script>
 </html>
