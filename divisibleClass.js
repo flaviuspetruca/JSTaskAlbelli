@@ -37,9 +37,11 @@ export default class Divisible {
     }
 
     computeResult(){
-        const text = [];
-        let i = 1;
-        while (i <= this.number){
+        let text = []
+        const recursive = (i) =>{
+            if (i === this.number)
+                return;
+                
             const myOutput = [];
             if (i % 2 === 0) {
                 myOutput.push("foo");
@@ -48,8 +50,9 @@ export default class Divisible {
                 myOutput.push("bar");
             }
             text.push(myOutput.length > 0 ? myOutput.join(" ") : i);
-            i++;
+            recursive(i + 1);
         }
+        recursive(1);
         this.outPutText.innerHTML = text.join("<br />");
     }
 
