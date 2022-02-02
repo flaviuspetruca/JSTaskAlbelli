@@ -1,0 +1,23 @@
+{
+  "name": "jstask",
+  "version": "1.0.0",
+  "description": "Requires a natural number greater than 0 adn smaller than 10000 to be inputed.\r Will display for each number in the interval 1 to n (number typed in the input) \r - foo bar if the number is divisible by 2 and 3\r - foo if the number is divisible just by 2\r - bar if the number is divisible just by 3\r - and the iterration number in the other case.",
+  "main": "script.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flaviuspetruca/JSTaskAlbelli.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/flaviuspetruca/JSTaskAlbelli/issues"
+  },
+  "homepage": "https://github.com/flaviuspetruca/JSTaskAlbelli#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "mocha": "^9.2.0"
+  }
+}

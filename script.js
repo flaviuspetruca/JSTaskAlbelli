@@ -6,9 +6,8 @@ import Divisible from "./divisibleClass.js";
 export const printResults = () => {
     const outPutText = document.getElementById("outputText");
     const number = document.getElementById("input").value;
-    const submitBtn = document.getElementById("submitBtn");
     
-    let divisible = new Divisible(outPutText, number, submitBtn);
+    let divisible = new Divisible(outPutText, number);
 
     if (!divisible.validate()){
         return;
@@ -21,3 +20,4 @@ document.getElementById("submitBtn").addEventListener("click", function(event){
     event.preventDefault();
     printResults();
 });
+
